@@ -1,0 +1,8 @@
+<form (ngSubmit)="salvar()" #form="ngForm">
+    <input type="text" name="nome" [(ngModel)]="pessoa.nome" placeholder="Nome" required>
+    <input type="text" name="endereco" [(ngModel)]="pessoa.endereco" placeholder="Endereço" required>
+    <input type="text" name="bairro" [(ngModel)]="pessoa.bairro" placeholder="Bairro" required>
+    <input type="text" name="estado" [(ngModel)]="pessoa.estado" placeholder="Estado" required>
+    <input type="number" name="cep" [(ngModel)]="pessoa.cep" placeholder="Cep" required>
+    <button type="submit">Salvar</button>
+</form>
